@@ -29,6 +29,8 @@ main p:first-child{
   line-height: 3.2rem;
   letter-spacing: 0.3rem;
   color: #7158EF;
+
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -83,4 +85,33 @@ ul li {
   max-width: 25.7rem;
   display: flex;
   gap: 3.8rem;
+}
+
+ul li + li {
+  margin-top: 3.2rem;
+}
+
+/* Media queries */
+
+@media (min-width: 700px) {
+  body {
+    padding: 8rem;
+  }
+
+  main {
+    max-width: 1020px;
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+  }
+
+  main > div {
+    max-width: 484px;
+  }
+
+  ul li {
+    gap: 5.3rem;
+    max-width: 450px;
+    align-items: center;
+  }
 }
